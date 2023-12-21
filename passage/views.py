@@ -6,9 +6,6 @@ from django import forms
 
 
 
-def index(request):
-    return render(request,"index.html")
-
 @csrf_exempt
 def question_answering(request):
     if request.method == 'POST':
